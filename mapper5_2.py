@@ -1,4 +1,4 @@
-lineas = open("Dataset.csv", encoding="utf-8").read().splitlines()
+lineas = open("Dataset2.csv", encoding="utf-8").read().splitlines()
 
 mensajeFinal = ""
 # ¿Cuáles alimentos aportan más de 1 mg de hierro y menos de 3 g de grasas?
@@ -19,6 +19,6 @@ for linea in lineas:
         hierroAlimento = lineaATrabajar[5].replace(",",".")
         mensajeFinal += f"{hierroAlimento}\n"
 
-archivoAEntregar = open("resultado_mapper5.csv", "w", encoding="utf-8")
+archivoAEntregar = open("resultado_mapper5_2.csv", "w", encoding="utf-8")
 archivoAEntregar.write(mensajeFinal[:-1])
 archivoAEntregar.close()

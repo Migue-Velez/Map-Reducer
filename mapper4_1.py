@@ -1,4 +1,4 @@
-lineas = open("Dataset.csv", encoding="utf-8").read().splitlines()
+lineas = open("Dataset1.csv", encoding="utf-8").read().splitlines()
 
 # ¿Cuál es el alimento que posee la mayor suma de vitaminas?
 mensajeFinal = ""
@@ -18,6 +18,6 @@ for linea in lineas:
                 mensajeFinal += ";0"
     mensajeFinal += "\n"
 
-archivoAEntregar = open("resultado_mapper4.csv", "w", encoding="utf-8")
+archivoAEntregar = open("resultado_mapper4_1.csv", "w", encoding="utf-8")
 archivoAEntregar.write(mensajeFinal[:-1])
 archivoAEntregar.close()

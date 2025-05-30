@@ -1,5 +1,9 @@
-lineas = open("resultado_mapper3.csv", encoding="utf-8").read().splitlines()
+archivo1 = open("resultado_mapper3_1.csv", encoding="utf-8").read()
+archivo2 = open("resultado_mapper3_2.csv", encoding="utf-8").read()
 
+archivoCompleto = archivo1 + "\n" + archivo2
+
+lineas = archivoCompleto.splitlines()
 # ¿Cuántos alimentos tienen más de 0.1 gramos de tiamina?
 listaAlimentos = []
 mensajeFinal = "null "

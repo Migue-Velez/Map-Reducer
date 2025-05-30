@@ -1,5 +1,9 @@
-lineas = open("resultado_mapper2.csv", encoding="utf-8").read().splitlines()
+archivo1 = open("resultado_mapper2_1.csv", encoding="utf-8").read()
+archivo2 = open("resultado_mapper2_2.csv", encoding="utf-8").read()
 
+archivoCompleto = archivo1 + "\n" + archivo2
+
+lineas = archivoCompleto.splitlines()
 # ¿Cuál es el alimento con mayor cantidad de vitamina C?
 VitaminaCMasAlto = 0
 for linea in lineas:

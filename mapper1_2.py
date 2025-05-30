@@ -1,4 +1,4 @@
-lineas = open("Dataset.csv", encoding="utf-8").read().splitlines()
+lineas = open("Dataset2.csv", encoding="utf-8").read().splitlines()
 
 # ¿Cuál es el alimento con mayor cantidad de grasas?
 listaAEntregar = []
@@ -17,6 +17,6 @@ mensajeFinal = ""
 for mensaje in listaAEntregar:
     mensajeFinal += str(mensaje[0]) + ";" + str(mensaje[1]) + "\n"
 
-archivoAEntregar = open("resultado_mapper1.csv", "w", encoding="utf-8")
+archivoAEntregar = open("resultado_mapper1_2.csv", "w", encoding="utf-8")
 archivoAEntregar.write(mensajeFinal[:-1])
 archivoAEntregar.close()

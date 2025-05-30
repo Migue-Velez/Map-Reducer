@@ -1,4 +1,4 @@
-lineas = open("Dataset.csv", encoding="utf-8").read().splitlines()
+lineas = open("Dataset2.csv", encoding="utf-8").read().splitlines()
 
 # ¿Cuántos alimentos tienen más de 0.1 gramos de tiamina?
 listaAEntregar = []
@@ -18,6 +18,6 @@ mensajeFinal = ""
 for mensaje in listaAEntregar:
     mensajeFinal += str(mensaje[0]) + ";" + str(mensaje[1]) + "\n"
 
-archivoAEntregar = open("resultado_mapper3.csv", "w", encoding="utf-8")
+archivoAEntregar = open("resultado_mapper3_2.csv", "w", encoding="utf-8")
 archivoAEntregar.write(mensajeFinal[:-1])
 archivoAEntregar.close()

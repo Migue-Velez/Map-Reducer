@@ -1,4 +1,9 @@
-lineas = open("resultado_mapper5.csv", encoding="utf-8").read().splitlines()
+archivo1 = open("resultado_mapper5_1.csv", encoding="utf-8").read()
+archivo2 = open("resultado_mapper5_2.csv", encoding="utf-8").read()
+
+archivoCompleto = archivo1 + "\n" + archivo2
+
+lineas = archivoCompleto.splitlines()
 # ¿Cuáles alimentos aportan más de 1 mg de hierro y menos de 3 g de grasas?
 # Alimento;grasa;hierro
 mensajeFinal = ""

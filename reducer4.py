@@ -1,5 +1,9 @@
-lineas = open("resultado_mapper4.csv", encoding="utf-8").read().splitlines()
+archivo1 = open("resultado_mapper4_1.csv", encoding="utf-8").read()
+archivo2 = open("resultado_mapper4_2.csv", encoding="utf-8").read()
 
+archivoCompleto = archivo1 + "\n" + archivo2
+
+lineas = archivoCompleto.splitlines()
 # ¿Cuál es el alimento que posee la mayor suma de vitaminas?
 # Lógica. Asumiremos que toda la vitamina A de estos alimentos provienen del retinol.
 # 1 UI de vitamina A = 0.00003 miligramos
